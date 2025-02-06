@@ -1,5 +1,6 @@
 import React from "react";
 import { Builder } from "@builder.io/react";
+import AssetSelector from "./components/ui";
 
 interface PluginExampleProps {
   value: string;
@@ -36,9 +37,7 @@ function PluginExample(props: PluginExampleProps) {
 
 Builder.registerEditor({
   name: "DAMAssetSelector",
-  image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAM1BMVEVHcEwSbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf5iEzacAAAAEXRSTlMATmpgJkKy/+WQDflzyzOBF9ldCioAAACgSURBVHgBtdFRDoQgDATQImgLK7L3P+2mk1kb02/nRyYvoTXImylbbdFa3fa7HOox8m6oHWV8lCleT2XMm+k/k8YcIhWHOcPQPE0mbyhhTeTy7xKfyN1oXz923Ot1JJPqiH1qMvxel84pT1uKaUOhT0Mx3O5ZybTFMUy2sNBsHB9Ww0KThbqNKxsy8D69JyMbIBmXDMspIONimdd5yfv5AWOTCg2BQ0hHAAAAAElFTkSuQmCC",
-  component: PluginExample,
+  image:
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAM1BMVEVHcEwSbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf4Sbf5iEzacAAAAEXRSTlMATmpgJkKy/+WQDflzyzOBF9ldCioAAACgSURBVHgBtdFRDoQgDATQImgLK7L3P+2mk1kb02/nRyYvoTXImylbbdFa3fa7HOox8m6oHWV8lCleT2XMm+k/k8YcIhWHOcPQPE0mbyhhTeTy7xKfyN1oXz923Ot1JJPqiH1qMvxel84pT1uKaUOhT0Mx3O5ZybTFMUy2sNBsHB9Ww0KThbqNKxsy8D69JyMbIBmXDMspIONimdd5yfv5AWOTCg2BQ0hHAAAAAElFTkSuQmCC",
+  component: AssetSelector,
 });
-
-
-
