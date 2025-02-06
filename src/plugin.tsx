@@ -1,6 +1,6 @@
 import React from "react";
 import { Builder } from "@builder.io/react";
-import AssetSelector from "./components/ui";
+import AssetSelector from "@/components/ui";
 
 interface PluginExampleProps {
   value: string;
