@@ -31,6 +31,9 @@
   "dependencies": {
     "@bynder/compact-view": "^4.3.3",
     "@mui/icons-material": "^6.4.3",
-    "@mui/material": "^6.4.3"
+    "@mui/material": "^6.4.3",
+    "@tabler/icons-react": "^3.29.0",
+    "@types/filesize": "^5.0.2",
+    "filesize": "^10.1.6"
   }
 }
