@@ -85,7 +85,7 @@ export const BynderCompactViewWrapper = (props: BynderCompactViewProps) => {
   // const url = pluginSettings?.get(BYNDER_URL);
   // const language = pluginSettings?.get(BYNDER_LANGUAGE) as SupportedLanguage;
 
-  const url = "https://orlandohealth.bynder.com";
+  const url = "https://orlandohealth.getbynder.com";
   const language = "en_US";
 
   const bynderProps: CompactViewProps = {
