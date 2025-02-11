@@ -62,7 +62,7 @@ Builder.register("plugin", {
       type: 'text',
       name: BYNDER_URL,
       friendlyName: 'Portal Domain',
-      // defaultValue: "example.getbynder.com",
+      defaultValue: "orlandohealth.getbynder.com",
       helperText: "Set a default Bynder Portal domain, eg: 'example.getbynder.com'",
     },
     {
