@@ -56,40 +56,40 @@ Builder.register("plugin", {
   id: pluginId,
   // will be used to prefix generated types
   name: "Bynder",
-  // a list of input definition that you might need to communicate with custom backend API
-  // settings: [
-  //   {
-  //     type: 'text',
-  //     name: BYNDER_URL,
-  //     friendlyName: 'Portal Domain',
-  //     // defaultValue: "example.getbynder.com",
-  //     helperText: "Set a default Bynder Portal domain, eg: 'example.getbynder.com'",
-  //   },
-  //   {
-  //     type: 'string',
-  //     name: BYNDER_LANGUAGE,
-  //     friendlyName: 'Portal Language',
-  //     defaultValue: 'en_US',
-  //     enum: SupportedLanguages,
-  //     helperText: 'Select the language for the Bynder Portal',
-  //   },
-  //   // Advanced features, could be removed if AssetFieldSelection is not needed:
-  //   {
-  //     type: 'boolean',
-  //     advanced: true,
-  //     name: SHOW_ASSET_FIELD_SELECTION,
-  //     friendlyName: 'Use Asset Field Selection',
-  //   },
-  //   {
-  //     type: 'longText',
-  //     advanced: true,
-  //     name: ASSET_FIELD_SELECTION,
-  //     friendlyName: 'Asset Field Selection',
-  //     helperText: `Optional: GraphQL selection for asset fields, see https://developer-docs.bynder.com/ui-components`,
-  //     showIf: `!!options.get('${SHOW_ASSET_FIELD_SELECTION}')`,
-  //   },
-  // ],
-  // Modify the save button text
+//  a list of input definition that you might need to communicate with custom backend API
+  settings: [
+    {
+      type: 'text',
+      name: BYNDER_URL,
+      friendlyName: 'Portal Domain',
+      // defaultValue: "example.getbynder.com",
+      helperText: "Set a default Bynder Portal domain, eg: 'example.getbynder.com'",
+    },
+    {
+      type: 'string',
+      name: BYNDER_LANGUAGE,
+      friendlyName: 'Portal Language',
+      defaultValue: 'en_US',
+      enum: SupportedLanguages,
+      helperText: 'Select the language for the Bynder Portal',
+    },
+    // Advanced features, could be removed if AssetFieldSelection is not needed:
+    {
+      type: 'boolean',
+      advanced: true,
+      name: SHOW_ASSET_FIELD_SELECTION,
+      friendlyName: 'Use Asset Field Selection',
+    },
+    {
+      type: 'longText',
+      advanced: true,
+      name: ASSET_FIELD_SELECTION,
+      friendlyName: 'Asset Field Selection',
+      helperText: `Optional: GraphQL selection for asset fields, see https://developer-docs.bynder.com/ui-components`,
+      showIf: `!!options.get('${SHOW_ASSET_FIELD_SELECTION}')`,
+    },
+  ],
+  //Modify the save button text
   ctaText: "Save Changes",
   // If we need to make a request to validate anything:
   // async onSave(actions) {
