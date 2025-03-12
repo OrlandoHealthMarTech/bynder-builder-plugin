@@ -14,6 +14,7 @@ import { Button, IconButton, Paper, Tooltip, Typography } from "@mui/material";
 import { Close } from "@mui/icons-material";
 import { IconCloudUpload } from "@tabler/icons-react";
 import { partial } from "filesize";
+import { settings } from "../settings";
 
 import type {
   BuilderPluginProps,
@@ -82,11 +83,12 @@ export const BynderCompactViewWrapper = (props: BynderCompactViewProps) => {
   // Get the saved Bynder URL from the plugin settings
   const pluginSettings =
     appState.user.organization.value.settings.plugins?.get(pluginId);
-  // const url = pluginSettings?.get(BYNDER_URL);
+  const url = settings.bynderUrl;
+  const language = settings.bynderLanguage;
   // const language = pluginSettings?.get(BYNDER_LANGUAGE) as SupportedLanguage;
 
-  const url = "https://orlandohealth.getbynder.com";
-  const language = "en_US";
+  //const url = "https://orlandohealth.getbynder.com";
+  //const language = "en_US";
 
   const bynderProps: CompactViewProps = {
     onSuccess,
